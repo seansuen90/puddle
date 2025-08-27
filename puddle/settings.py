@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     ### added
     "django_browser_reload",
     "core",
+    'item',
     
 ]
 
@@ -136,3 +137,6 @@ if 'CODESPACE_NAME' in os.environ:
     CSRF_TRUSTED_ORIGINS.append(f'https://{codespace_name}-8000.{codespace_domain}')
 
 X_FRAME_OPTIONS = "ALLOW-FROM preview.app.github.dev"
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
