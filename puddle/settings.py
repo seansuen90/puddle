@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     "django_browser_reload",
     "core",
     'item',
+    "dashboard",
     
 ]
 
