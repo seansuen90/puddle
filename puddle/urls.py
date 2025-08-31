@@ -26,7 +26,8 @@ urlpatterns = [
     path("__reload__/", include("django_browser_reload.urls")),
     path('items/', include('item.urls')),
     path('', include('core.urls')),
-    path('dashboard/', include('dashboard.urls'))
+    path('dashboard/', include('dashboard.urls')),
+    path('inbox/', include('conversation.urls')),
 ]
   
 if settings.DEBUG:
